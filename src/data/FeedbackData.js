@@ -14,6 +14,6 @@ const FeedbackData = [
     rating: 6,
     id: 4,
   },
-];
+]
 
-export default FeedbackData;
+export default FeedbackData
