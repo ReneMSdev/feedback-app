@@ -211,6 +211,20 @@ input:focus {
   margin: 10px 0;
 }
 
+.back-link-p {
+  padding-top: 3rem;
+}
+
+.back-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #202142;
+}
+
+.back-link:hover {
+  color: #ff6a95;
+}
+
 @media (max-width: 600px) {
   .rating li {
     margin: 10px 3px;
