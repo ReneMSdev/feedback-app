@@ -10,9 +10,9 @@ const FeedbackData = [
     text: 'This is feedback item 2 coming from the backend',
   },
   {
-    text: 'Updated all packages to latest',
+    text: 'This is feedback item 3 coming from the backend',
     rating: 6,
-    id: '4',
+    id: '3',
   },
 ]
 
