@@ -7,15 +7,19 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 8000",
+    "dev-server": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
-    "framer-motion": "^4.1.17",
+    "concurrently": "^9.1.2",
+    "json-server": "^1.0.0-beta.3",
+    "uuid": "^11.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.4",
-    "uuid": "^11.0.5"
+    "framer-motion": "^4.1.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
