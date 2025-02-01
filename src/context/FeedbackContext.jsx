@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from 'react'
-import { v4 as uuidv4 } from 'uuid'
 
 const FeedbackContext = createContext()
 
@@ -17,7 +16,7 @@ export const FeedbackProvider = ({ children }) => {
 
   // Fetch feedback
   const fetchFeedback = async () => {
-    const response = await fetch('http://localhost:8000/feedback?_sort=id&order=desc')
+    const response = await fetch(`/api/feedback?_sort=id&_order=desc`) // proxy is set in vite.config.js
     const data = await response.json()
 
     setFeedback(data)
@@ -25,9 +24,18 @@ export const FeedbackProvider = ({ children }) => {
   }
 
   // Add Feedback
-  const addFeedback = (newFeedback) => {
-    const feedbackWithId = { ...newFeedback, id: uuidv4() }
-    setFeedback([feedbackWithId, ...feedback])
+  const addFeedback = async (newFeedback) => {
+    const response = await fetch('/api/feedback', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newFeedback),
+    })
+
+    const data = await response.json()
+
+    setFeedback([data, ...feedback])
   }
 
   // Delete Feedback
