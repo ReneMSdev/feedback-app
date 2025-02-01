@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 8000",
-    "dev-server": "concurrently \"npm run server\" \"npm run dev\""
+    "server-dev": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
     "concurrently": "^9.1.2",
