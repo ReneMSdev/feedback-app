@@ -80,7 +80,7 @@ The app uses react-router-dom for navigation between pages:
 ## Deployment
 
 The app is deployed on Netlify and can be accessed here:
-Feedback App
+[Feedback App](https://feedback-app-rms.netlify.app/)
 
 ## Styling
 
