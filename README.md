@@ -2,6 +2,11 @@
 
 Feedback App is a simple React application that allows users to leave reviews and rate products or services on a scale of 1-10. The app includes an interactive UI for submitting, editing, and deleting feedback. It features client-side state management with React Context and uses a mock backend powered by json-server.
 
+## Deployment
+
+The app is deployed on Netlify and can be accessed here:
+[Feedback App](https://feedback-app-rms.netlify.app/)
+
 ## Features
 
 * Submit feedback with a rating (1-10)
@@ -76,11 +81,6 @@ The app uses react-router-dom for navigation between pages:
 * / - Home page with feedback functionality
 
 * /about - About page with app details
-
-## Deployment
-
-The app is deployed on Netlify and can be accessed here:
-[Feedback App](https://feedback-app-rms.netlify.app/)
 
 ## Styling
 
